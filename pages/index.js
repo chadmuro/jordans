@@ -5,8 +5,6 @@ import styles from '../styles/Home.module.scss';
 import { fromImageToUrl, API_URL } from '../utils/urls';
 
 export default function Home({ shoes }) {
-	console.log(shoes);
-
 	return (
 		<div>
 			<Head>
@@ -17,7 +15,7 @@ export default function Home({ shoes }) {
 			<div className={styles.grid}>
 				{shoes.map(shoe => (
 					<div key={shoe.name}>
-						<Link href={`/jordans/${shoe.slug}`}>
+						<Link href={`/${shoe.slug}`}>
 							<a>
 								<div className={styles.card}>
 									<div className={styles.image}>

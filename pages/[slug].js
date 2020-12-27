@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { fromImageToUrl, API_URL } from '../../utils/urls';
+import { fromImageToUrl, API_URL } from '../utils/urls';
 
 const Shoe = ({ shoe }) => {
 	return (

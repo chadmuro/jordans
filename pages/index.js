@@ -22,8 +22,7 @@ export default function Home({ shoes }) {
 								<div className={styles.card}>
 									<div className={styles.image}>
 										<img
-											
-											src={fromImageToUrl(shoe.home_image)}
+											src={shoe.home_image.url}
 											alt={shoe.name}
 										/>
 									</div>
@@ -32,7 +31,7 @@ export default function Home({ shoes }) {
 							</a>
 						</Link>
 					</div>
-				))}
+                ))}
 			</div>
 		</div>
 	);

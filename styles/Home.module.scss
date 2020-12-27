@@ -1,0 +1,24 @@
+.grid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	justify-content: center;
+	align-items: center;
+	margin: 12px;
+}
+
+.image {
+    max-width: 400px;
+        
+	& img {
+        object-fit: cover;
+        width: 100%;
+	}
+}

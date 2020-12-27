@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Home.module.scss';
 
-import { fromImageToUrl, API_URL } from '../utils/urls';
+import { API_URL } from '../utils/urls';
 
 export default function Home({ shoes }) {
 	return (

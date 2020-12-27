@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.hero {
+    width: 100%;
+}
+
+.subtitle {
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 16px;
+}

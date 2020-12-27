@@ -1,17 +1,22 @@
 import Head from 'next/head';
-import { fromImageToUrl, API_URL } from '../utils/urls';
+import styles from '../styles/Shoe.module.scss';
+
+import { API_URL } from '../utils/urls';
 
 const Shoe = ({ shoe }) => {
 	return (
-		<div>
+		<div className={styles.container}>
 			<Head>
-				<title>History of Air Jordan || {shoe.title}</title>
+				<title>History of Air Jordan || {shoe.name}</title>
 				<meta name="description" content={shoe.name} />
 			</Head>
-            <h3>{shoe.name}</h3>
-            <img src={fromImageToUrl(shoe.hero_image)} alt={shoe.name} />
-            <h3>{shoe.name}</h3>
-            <p>{shoe.description}</p>
+
+			<h3 className={styles.title}>{shoe.name}</h3>
+			<img className={styles.hero} src={shoe.hero_image.url} alt={shoe.name} />
+			<h3 className={styles.title}>{shoe.name}</h3>
+			<h4 className={styles.subtitle}>Designer: {shoe.designer}</h4>
+			<h4 className={styles.subtitle}>Released: {shoe.released_year}</h4>
+			<p className={styles.description}>{shoe.description}</p>
 		</div>
 	);
 };
